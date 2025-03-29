@@ -8,8 +8,12 @@ This document is a draft.
 
 <!-- TODO: add links and clean up examples -->
 
-<!-- TODO: what about $ ! @ at start of node names? -->
+<!-- TODO: what about # $ ! @ at start of node names? -->
 <!-- TODO: Add prefix property for them!!! -->
+<!-- # / @ - possibly import/include -->
+<!-- $ - var -->
+<!-- @ / ! - override? -->
+<!-- ! - delete? -->
 
 ## Overview
 
@@ -118,7 +122,7 @@ list 0 1 2
 
 Node is a core component of JSL. Node is comprised by a name, [arguments](#arguments), [properties](#properties) and [children](#children) separated by either space or [slash-escaped line continuation](#line-continuation).
 
-[Arguments](#arguments) and [properties](#properties) must follow node's [name](#name) and can be placed in any order. Node's [children](#children) must be placed after node's [arguments](#arguments) and [properties](#properties).  
+[Arguments](#arguments) and [properties](#properties) must follow node's [name](#name) and can be placed in any order. Node's [children](#children) must be placed after node's [arguments](#arguments) and [properties](#properties).
 
 Node is terminated by either a newline, a semicolon (`;`), an ending bracket of a [child list](#children) (`}`) or the end of file/stream (an `EOF`). However node is not terminated if last character in line is a [backslash](#line-continuation) (`\`)
 
